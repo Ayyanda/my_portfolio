@@ -3,63 +3,161 @@
 <head>
   <meta charset="UTF-8">
   <title>Projects</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #ff6600, #1e1e1e);
+      color: white;
+      height: 100vh;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 64px;
+      font-weight: bold;
+      margin-bottom: 60px;
+    }
+
+    .project-section {
+      margin-bottom: 50px;
+      position: relative;
+    }
+
+    .project-title {
+      font-size: 42px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .project-title:hover {
+      color: #ffcc00;
+    }
+
+    .project-list {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      left: 280px;
+      top: 0;
+      background: rgba(255, 255, 255, 0.95);
+      color: #000;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .project-section:hover .project-list {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .project-list ul {
+      padding-left: 20px;
+    }
+
+    .project-list li {
+      margin-bottom: 10px;
+      list-style-type: disc;
+    }
+
+    .school-section .project-title {
+      color: #ccc;
+    }
+
+    .school-section:hover .project-title {
+      color: #00ffff;
+    }
+
+    /* Optional - Navigation sidebar */
+    .sidebar {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      background-color: white;
+      color: black;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .sidebar li:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <div class="menu">
-    <a href="about.html">About</a>
-    <a href="#">Beyond tech</a>
-    <a href="#">Skills</a>
-    <a href="#">Resume</a>
-    <a href="#">Contact me</a>
-  </div>
 
-  <div class="container">
-    <h1>Projects</h1>
+  <h1>Projects</h1>
 
-    <div class="section">
-      <h2>My complete projects</h2>
-      <div class="project-list">
-        <ul>
-          <li>Uno Game in Python</li>
-          <li>Robot World (Socket-based game)</li>
-          <li>Dice Simulator</li>
-          <li>IRC Chatroom Client</li>
-          <li>Network Analysis Tool (from CAB file)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>In progress</h2>
-      <div class="project-list">
-        <ul>
-          <li>Personal Portfolio Website</li>
-          <li>Crochet pattern app (design stage)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="section collab">
-      <h2>Collaborations</h2>
-      <div class="project-list">
-        <ul>
-          <li>Team chatbot (WeThinkCode_ project)</li>
-          <li>SQL Injection Scanner Tool (Mitiguard project)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="section school">
-      <h2>School projects</h2>
-      <div class="project-list">
-        <ul>
-          <li>IRC Chatroom Client (Private Repo)</li>
-          <li>Robot World with JSON Serialization (Private Repo)</li>
-          <li>Network Usage Analyzer (CAB file project) (Private Repo)</li>
-        </ul>
-      </div>
+  <div class="project-section">
+    <div class="project-title">My complete projects</div>
+    <div class="project-list">
+      <ul>
+        <li>UNO Game (Python)</li>
+        <li>Dice Simulator</li>
+        <!-- Add more as needed -->
+      </ul>
     </div>
   </div>
+
+  <div class="project-section">
+    <div class="project-title">In progress</div>
+    <div class="project-list">
+      <ul>
+        <li>Personal Portfolio Website</li>
+        <li>Mitiguard App</li>
+        <!-- Add more as needed -->
+      </ul>
+    </div>
+  </div>
+
+  <div class="project-section">
+    <div class="project-title">Collaborations</div>
+    <div class="project-list">
+      <ul>
+        <li>Group Capstone Project</li>
+        <li>Open Source Contribution (GitHub)</li>
+        <!-- Add more as needed -->
+      </ul>
+    </div>
+  </div>
+
+  <div class="project-section school-section">
+    <div class="project-title">School projects</div>
+    <div class="project-list">
+      <ul>
+        <li>Robot World (socket & JSON-based game)</li>
+        <li>IRC Client (server-based chat)</li>
+        <li>Network Analysis (PCAP parsing & graphing)</li>
+        <!-- More internal/private repos -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- Optional sidebar for navigation -->
+  <div class="sidebar">
+    <ul>
+      <li>About</li>
+      <li>Beyond Tech</li>
+      <li>Skills</li>
+      <li>Resume</li>
+      <li>Contact Me</li>
+    </ul>
+  </div>
+
 </body>
 </html>
