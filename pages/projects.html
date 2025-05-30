@@ -45,7 +45,7 @@
       color: #000;
       padding: 20px;
       border-radius: 10px;
-      width: 300px;
+      width: 340px;
       transition: opacity 0.4s ease, visibility 0.4s ease;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
@@ -56,12 +56,32 @@
     }
 
     .project-list ul {
-      padding-left: 20px;
+      padding-left: 0;
     }
 
     .project-list li {
-      margin-bottom: 10px;
-      list-style-type: disc;
+      margin-bottom: 12px;
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .project-list a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+    }
+
+    .project-list a:hover {
+      text-decoration: underline;
+    }
+
+    .project-list img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
     }
 
     .school-section .project-title {
@@ -74,42 +94,52 @@
 
     /* Optional - Navigation sidebar */
     .sidebar {
-      position: absolute;
-      top: 40px;
-      right: 40px;
-      background-color: white;
-      color: black;
-      padding: 15px;
-      border-radius: 10px;
-      font-size: 14px;
-    }
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
 
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-    }
+.sidebar a {
+  display: block;
+  color: #f5f5f5;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
 
-    .sidebar li {
-      margin-bottom: 10px;
-      cursor: pointer;
-    }
+.sidebar a:hover {
+  color: #FF6B00;
+}
 
-    .sidebar li:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
 
   <h1>Projects</h1>
+    <p style="font-size: 18px; max-width: 700px; margin-bottom: 40px; color: #f0f0f0;">
+    Here’s a collection of things I’ve built, am building, or have helped build — each one taught me something new. Feel free to explore!
+    </p>
+
 
   <div class="project-section">
     <div class="project-title">My complete projects</div>
     <div class="project-list">
       <ul>
-        <li>UNO Game (Python)</li>
-        <li>Dice Simulator</li>
-        <!-- Add more as needed -->
+        <li>
+          <a href="https://github.com/yourusername/uno-game" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Icon">
+            UNO Game (Python)
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/yourusername/dice-simulator" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Icon">
+            Dice Simulator
+          </a>
+        </li>
       </ul>
     </div>
   </div>
@@ -118,9 +148,18 @@
     <div class="project-title">In progress</div>
     <div class="project-list">
       <ul>
-        <li>Personal Portfolio Website</li>
-        <li>Mitiguard App</li>
-        <!-- Add more as needed -->
+        <li>
+          <a href="https://github.com/yourusername/portfolio-website" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Icon">
+            Personal Portfolio Website
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/yourusername/mitiguard" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Icon">
+            Mitiguard App
+          </a>
+        </li>
       </ul>
     </div>
   </div>
@@ -129,9 +168,18 @@
     <div class="project-title">Collaborations</div>
     <div class="project-list">
       <ul>
-        <li>Group Capstone Project</li>
-        <li>Open Source Contribution (GitHub)</li>
-        <!-- Add more as needed -->
+        <li>
+          <a href="https://github.com/yourusername/group-capstone" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Icon">
+            Group Capstone Project
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/yourusername/opensource-contribution" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Icon">
+            Open Source Contribution
+          </a>
+        </li>
       </ul>
     </div>
   </div>
@@ -140,15 +188,29 @@
     <div class="project-title">School projects</div>
     <div class="project-list">
       <ul>
-        <li>Robot World (socket & JSON-based game)</li>
-        <li>IRC Client (server-based chat)</li>
-        <li>Network Analysis (PCAP parsing & graphing)</li>
-        <!-- More internal/private repos -->
+        <li>
+          <a href="https://github.com/yourusername/robot-world" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Icon">
+            Robot World (sockets + JSON)
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/yourusername/irc-client" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Icon">
+            IRC Client (Chat Room)
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/yourusername/network-analysis" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Icon">
+            Network Analysis (PCAP)
+          </a>
+        </li>
       </ul>
     </div>
   </div>
 
-  <!-- Optional sidebar for navigation -->
+
   <div class="sidebar">
     <ul>
       <li>About</li>
