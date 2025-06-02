@@ -7,9 +7,9 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom, #ff6600, #1e1e1e);
+      background: linear-gradient(to bottom, #ff6600 0%, #331100 100%);
       color: white;
-      height: 100vh;
+      min-height: 100vh;
       padding: 40px;
     }
 
@@ -89,38 +89,53 @@
     }
 
     .school-section:hover .project-title {
-      color: #00ffff;
+      color: orange;
     }
 
-    /* Optional - Navigation sidebar */
-    .sidebar {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 10px 20px;
-  border-radius: 10px;
-}
+   .sidebar-menu {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
 
-.sidebar a {
-  display: block;
-  color: #f5f5f5;
-  text-decoration: none;
-  margin-bottom: 8px;
-  font-size: 0.95rem;
-}
+    .sidebar-menu a {
+      display: block;
+      color: #f5f5f5;
+      text-decoration: none;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
 
-.sidebar a:hover {
-  color: #FF6B00;
-}
+    .sidebar-menu a:hover {
+      color: black;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .content p {
+        font-size: 1rem;
+      }
+
+      .sidebar-menu {
+        top: 10px;
+        right: 10px;
+        padding: 8px 12px;
+      }
+    }
 
   </style>
 </head>
 <body>
 
   <h1>Projects</h1>
-    <p style="font-size: 18px; max-width: 700px; margin-bottom: 40px; color: #f0f0f0;">
-    Here’s a collection of things I’ve built, am building, or have helped build — each one taught me something new. Feel free to explore!
+    <p style="font-weight:bolder; font-size: 18px; max-width: 700px; margin-bottom: 40px; color: #f0f0f0;">
+      Welcome to my project portfolio. This collection showcases my technical journey through various development initiatives, from completed applications to ongoing collaborations. Each project represents a milestone in my growth as a software engineer and demonstrates my commitment to continuous learning and innovation.
     </p>
 
 
@@ -211,14 +226,12 @@
   </div>
 
 
-  <div class="sidebar">
-    <ul>
-      <li>About</li>
-      <li>Beyond Tech</li>
-      <li>Skills</li>
-      <li>Resume</li>
-      <li>Contact Me</li>
-    </ul>
+   <div class="sidebar-menu">
+    <a href="about.html">About</a>
+    <a href="beyond_tech.html">Beyond Tech</a>
+    <a href="#">Skills</a>
+    <a href="#">Resume</a>
+    <a href="#">Contact Me</a>
   </div>
 
 </body>
