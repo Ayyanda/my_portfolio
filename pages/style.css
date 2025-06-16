@@ -1,0 +1,20 @@
+body{
+    background-color: rgba(0, 0, 0, 0.893);
+}
+
+h1{
+    color: rgb(255, 119, 0);
+}
+h2{
+    color:rgb(255, 119, 0);
+}
+
+h3{
+    color: rgb(255, 119, 0);
+}
+
+a{
+    color:orange ;
+    text-decoration: none;
+}
+
