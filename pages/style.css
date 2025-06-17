@@ -26,3 +26,25 @@ p{
     font-family: 'Times New Roman', Times, serif;
 }
 
+a:hover{
+    color:orangered;
+}
+
+.highlight{
+    color: rgb(255, 149, 0);
+}
+
+section {
+    padding :20px;
+    margin : 20px auto;
+    width : 80%;
+    background-color: black;
+    box-shadow: 0px 4px 10px rgba(0,0,0,1);
+    border-radius: 12px;
+}
+
+nav{
+    text-align: right;
+}
+
+
