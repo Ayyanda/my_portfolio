@@ -17,4 +17,12 @@ a{
     color:orange ;
     text-decoration: none;
 }
+highlight{
+    color:orange;
+}
+
+p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
 
