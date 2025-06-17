@@ -1,29 +1,23 @@
-body{
-    background-color: rgba(0, 0, 0, 0.893);
+body {
+  background-image: url(../Assets/images/MuchaTseBle.jpeg);
+  
 }
 
-h1{
-    color: rgb(255, 119, 0);
-}
-h2{
-    color:rgb(255, 119, 0);
-}
-
-h3{
+h1,h2,h3{
+    font-family: 'Lexend' sans-serif;
     color: rgb(255, 119, 0);
 }
 
 a{
     color:orange ;
-    text-decoration: none;
 }
-highlight{
+.highlight{
     color:orange;
 }
 
 p{
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lexend' sans-serif;
 }
 
 a:hover{
@@ -37,14 +31,32 @@ a:hover{
 section {
     padding :20px;
     margin : 20px auto;
+    min-height: 600px;
     width : 80%;
     background-color: black;
     box-shadow: 0px 4px 10px rgba(0,0,0,1);
     border-radius: 12px;
 }
 
-nav{
-    text-align: right;
+nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: orangered;
 }
 
 
