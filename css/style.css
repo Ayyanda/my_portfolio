@@ -36,6 +36,7 @@ p {
 }
 
 section {
+  scroll-margin-top: 200px;
   display: block;
   padding: 20px;
   margin: 20px auto;
@@ -149,3 +150,17 @@ nav a {
 nav a:hover {
   color: orangered;
 }
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
