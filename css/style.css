@@ -1,78 +1,86 @@
-
-
 body {
   background-image: url(../Assets/images/MuchaTseBle.jpeg);
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  
 }
 
-h1{
+h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 600;
   font-size: 3rem;
   color: rgb(255, 119, 0);
 }
 
-h2,h3{
+h2, h3 {
   font-family: 'Lexend', sans-serif;
   font-weight: 600;
   color: rgb(255, 119, 0);
 }
 
-a{
-    color:orange ;
-}
-.highlight{
-    color:orange;
+a {
+  color: orange;
 }
 
-p{
-    color: white;
-    font-family: 'Poppins' sans-serif;
-    line-height: 1.6;
+a:hover {
+  color: orangered;
 }
 
-a:hover{
-    color:orangered;
+.highlight {
+  color: rgb(255, 149, 0);
 }
 
-.highlight{
-    color: rgb(255, 149, 0);
+p {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
 }
 
 section {
-    padding :20px;
-    margin : 20px auto;
-    min-height: 600px;
-    width : 80%;
-    background-color: black;
-    box-shadow: 0px 4px 10px rgba(0,0,0,1);
-    border-radius: 12px;
+  display: block;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  background-color: black;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 1);
+  border-radius: 12px;
+  height: auto;
+  min-height: unset;
 }
+
+
+.full-page {
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+}
+
 
 .landing-section {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
-  padding: 60px 40px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.85);
   border-radius: 12px;
 }
+
 
 .landing-left,
 .landing-right {
   flex: 1;
 }
 
+
 .landing-image {
   width: 100%;
-  height: auto;
+  height: 600px;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-  max-height: 500px;
-  object-fit: cover;
+  object-fit: contain; 
+  max-height: none;    
 }
 
 .landing-right {
@@ -97,6 +105,7 @@ section {
     margin-bottom: 20px;
   }
 }
+
 
 .cta-button {
   display: inline-block;
@@ -140,5 +149,3 @@ nav a {
 nav a:hover {
   color: orangered;
 }
-
-
