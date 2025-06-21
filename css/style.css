@@ -207,3 +207,15 @@ nav a:hover {
     height: 40px;
   }
 }
+
+.bullet-skill-list {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.bullet-skill-list li {
+  margin-bottom: 6px;
+}
+
