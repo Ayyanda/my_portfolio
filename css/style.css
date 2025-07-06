@@ -232,9 +232,9 @@ nav a:hover {
 /*================light-mode setting=============*/
 
 body.light-mode {
-  background-image: url(../assets/images/Orange\ swirl\ background.jpeg);
-  background-color: #fff;
-  color: #000;
+  background-image: url(../assets/images/colorful\ orange\ and\ yellow\ wallpaper.jpeg);
+  background-color: rgb(255, 174, 0); 
+  /* color : #000; */
 }
 
 body.light-mode h1,
@@ -255,7 +255,7 @@ body.light-mode section {
 }
 
 body.light-mode nav {
-  background-color: #fff;
+  background-color: white;
 }
 
 body.light-mode nav a {
